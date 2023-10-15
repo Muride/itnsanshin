@@ -589,4 +589,29 @@ h4{
 	.blog-text{
 		width:95%;
 	}
+	
+	.contact img{
+		width:100%;
+	}
+	
+	.profile-contents{
+		flex-direction:column;
+	}
+	
+	.profile-left{
+		margin:0 auto;
+	}
+	
+	h1{
+		display:flex;
+		align-items: flex-end;
+		font-size:20px;
+	}
+	.logo{
+		font-size:12px;
+	}
+	
+	.logo img{
+		width:80px;
+	}
 }
