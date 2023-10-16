@@ -1,6 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-
 body{
 	font-family: "ten-mincho-text", serif;
 	font-weight: 400;
@@ -484,6 +483,14 @@ h4{
 	line-height:28px;
 }
 
+.textlink{
+	text-decoration:underline;
+	color:#2C44D3;
+}
+.textlink:hover{
+	background-color:#F3E9E2;
+}
+
 @keyframes fadein{
 		0%{
 			opacity:0%;
@@ -587,7 +594,8 @@ h4{
 	}
 	
 	.blog-text{
-		width:95%;
+		width:100%;
+		margin:20px 0px 20px 0px;
 	}
 	
 	.contact img{
@@ -614,4 +622,9 @@ h4{
 	.logo img{
 		width:80px;
 	}
+	
+	.profile-right{
+		margin-left:0px;
+	}
+	
 }
