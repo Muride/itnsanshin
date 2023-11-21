@@ -375,6 +375,13 @@ footer{
 	margin-top:40px;
 }
 
+.whatissanshin img{
+	width:100%;
+	max-width:600px;
+	margin:10px auto;
+	display:block;
+}
+
 .blog-wrapper{
 	display:flex;
 	justify-content:space-between;
