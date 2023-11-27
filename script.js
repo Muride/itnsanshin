@@ -1,7 +1,4 @@
 // JavaScript Document
-
-
-
 $(function(){
 	$(".menuicon").click(function(){
 		$("#menu,#close").toggleClass("displaynone");
@@ -9,4 +6,13 @@ $(function(){
 		$(".menu-contents").toggleClass("displaynone");
 		$(".menu-contents").toggleClass("fadedisplay");
 	});
+});
+
+$(function() {
+  $('.carousel-wrapper').slick({
+	  autoplay:true,
+	  centerMode: true,
+	  centerPadding: '12%',
+	  slidesToShow: 1,
+  }); 
 });

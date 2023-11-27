@@ -71,52 +71,55 @@ header img{
 .socialmedias{
 	display:flex;
 	justify-content:center;
+	margin:0 0 -10px 0;
+}
+
+.sp-socialmedias{
+	display:none;
 }
 
 .mediabtn{
-	width: 60px;
-	height: 60px;
 	border-radius: 8px;
 	background: #fcf8f5;
 	box-shadow: 0px 0px 10px rgba(67, 34, 9, 0.46);
-	position:relative;
+	display:flex;
+	align-items:center;
+	padding:8px;
 	margin:0px 15px;
 	transition:all 0.2s;
 }
 
-.mediabtn img{
-	width:65%;
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform:translateX(-50%) translateY(-50%);
+i{
+	transform: scale(0.8);
+	margin-right:2px;
 }
+
 
 .mediabtn:hover{
 	transform:scale(1.1);
 	transition:all 0.2s;
 }
 
+
+.slick-prev:before, .slick-next:before {
+	color: #432209;
+	opacity: 1;
+}
+
 .carousel-wrapper{
 	margin:20px auto;
 	position:relative;
-	width:100%;
+	width:82%;
 	max-width:1000px;
-	padding-bottom:35%;
-}
-
-/*カルーセルの高さを1000px以上で固定する*/
-@media screen and (min-width:1000px) {
-  .carousel-wrapper{
-	  padding-bottom:0%;
-	  height:350px;
-  }
 }
 
 .carousel-content{
 	text-align:center;
 	font-size:40px;
-	width:60%;
+	transform: scale(0.8);
+	z-index:0;
+	margin:0 -0.5%;
+	pointer-events: none;
 }
 
 .carousel-content img{
@@ -125,88 +128,15 @@ header img{
 	transition:all 0.2s;
 }
 
-
-
-#c1{
-	position:absolute;
-	top:0px;
-	left:0;	
-	transform:scale(80%);
-	z-index:0;
-	animation:autoslide 25s linear infinite;
+.slick-center{
+	transform:scale(0.9);
+	transition:all 0.2s;
+	z-index:999;
+	pointer-events: all;
 }
 
-#c2{
-	position:absolute;
-	top:0px;
-	left:10%;
-	transform:scale(90%);
-	z-index:1;
-	animation:autoslide 25s linear -20s infinite;
-}
-
-#c3{
-	position:absolute;
-	top:0px;
-	left:50%;
-	transform:translateX(-50%);
-	z-index:2;
-	animation:autoslide 25s linear -15s infinite;
-}
-
-#c4{
-	position:absolute;
-	top:0px;
-	left:75%;
-	transform:translateX(-75%) scale(90%);
-	z-index:1;
-	animation:autoslide 25s linear -10s infinite;
-}
-
-#c5{
-	position:absolute;
-	top:0px;
-	left:100%;	
-	transform:translateX(-100%) scale(80%);
-	z-index:0;
-	animation:autoslide 25s linear -5s infinite;
-}
-
-@keyframes autoslide{
-	0%,17%{
-		left:0;	
-		transform:scale(80%);
-		z-index:0;
-	}
-	20%,37%{
-		left:100%;	
-		transform:translateX(-100%) scale(80%);
-		z-index:0;
-	}
-	40%,57%{
-		left:75%;
-		transform:translateX(-75%) scale(90%);
-		z-index:1;
-	}
-	60%,77%{
-		left:50%;
-		transform:translateX(-50%);
-		z-index:2;
-	}
-	80%,97%{
-		left:10%;
-		transform:scale(90%);
-		z-index:1;
-	}
-	100%{
-		left:0;	
-		transform:scale(80%);
-		z-index:0;
-	}
-}
-
-.carousel-content img:hover{
-	transform:scale(105%);
+.slick-center:hover{
+	transform:scale(0.95);
 	transition:all 0.2s;
 }
 
@@ -316,6 +246,10 @@ footer{
 .profile-contents{
 	display:flex;
 }
+
+.profile-left{
+	width:150px;
+}
 .itunaicon{
 	width:150px;
 	height:150px;
@@ -323,43 +257,19 @@ footer{
 	margin-top:40px;
 }
 
-.profile-socialmedias{
-	width:150px;
-	display:flex;
-	justify-content:space-around;
-	margin-top:20px;
-}
-
 .profsns{
-	position:relative;
-	width:25%;
+	border-radius: 8px;
+	background: #fcf8f5;
+	box-shadow: 0px 0px 10px rgba(67, 34, 9, 0.46);
+	padding:8px;
+	margin:15px 10px;
 	transition:all 0.2s;
+	text-align:center;
 }
 
-.profsns img{
-	width:100%;
-}
-
-.profsns a{
-	position:absolute;
-	top:0px;
-	left:0px;
-	width:100%;
-	height:100%;
-}
-
-#profnicoicon{
-	transform:translateX(3px);
-	transition:all 0.2s;
-}
 
 .profsns:hover{
 	transform:scale(1.1);
-	transition:all 0.2s;
-}
-
-#profnicoicon:hover{
-	transform:translateX(3px) scale(1.1);
 	transition:all 0.2s;
 }
 
@@ -584,6 +494,23 @@ h4{
 }
 
 @media screen and (max-width:670px){
+	.socialmedias{
+		display:none;
+	}
+	.sp-socialmedias{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin:-20px 0 25px 0;
+	}
+	.mediabtn{
+		margin-top:15px;
+		display:flex;
+		justify-content: center;
+		width:150px;
+		
+	}
+	
 	.blog-wrapper{
 		display:flex;
 		flex-flow:column;
@@ -614,8 +541,13 @@ h4{
 	}
 	
 	.profile-left{
-		margin:0 auto;
+		margin:0 auto -25px auto;
 	}
+	
+	.profsns{
+		justify-content: center;
+	}
+
 	
 	h1{
 		display:flex;

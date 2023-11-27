@@ -19,13 +19,13 @@ if (location.search == "?index-notification"){
 	$(".blog-index").addClass("hidden");
 	$(".others").removeClass("hidden");
 	$(".pagenation").addClass("hidden");
-} else if(location.search == "?index-202310"){
+} else if(location.search == "?index-202312"){
 	$(".blog-index").addClass("hidden");
-	$(".202310").removeClass("hidden");
+	$(".202312").removeClass("hidden");
 	$(".pagenation").addClass("hidden");
-} else if(location.search == "?index-202311"){
+} else if(location.search == "?index-202401"){
 	$(".blog-index").addClass("hidden");
-	$(".202311").removeClass("hidden");
+	$(".202401").removeClass("hidden");
 	$(".pagenation").addClass("hidden");
 }
 	
@@ -75,15 +75,15 @@ if (location.search == "?index-notification"){
 		$(".pagenation").addClass("hidden");
 	});
 	
-	$("#202310").click(function(){
+	$("#202312").click(function(){
 		$(".blog-index").addClass("hidden");
-		$(".202310").removeClass("hidden");
+		$(".202312").removeClass("hidden");
 		$(".pagenation").addClass("hidden");
 	});
 	
-	$("#202311").click(function(){
+	$("#202401").click(function(){
 		$(".blog-index").addClass("hidden");
-		$(".202311").removeClass("hidden");
+		$(".202401").removeClass("hidden");
 		$(".pagenation").addClass("hidden");
 	});
 
