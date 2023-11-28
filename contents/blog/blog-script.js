@@ -1,6 +1,5 @@
 // JavaScript Document
-
-$(function(){
+$(function(){	
 	$("#all").click(function(){
 		location.href = "../04-blog-top.html";
 	});

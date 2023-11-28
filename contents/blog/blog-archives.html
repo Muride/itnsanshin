@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../reset.css">
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'wke3ceh',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/85e234d146.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../../style.css">
+<script src="../../script.js"></script>
+<script src="blog-script.js"></script>
+<title>いつなの三線茶房</title>
+<link rel="icon" type="image/png" href="../../images/midasi-icon.png">
+</head>
+
+<body>
+	
+
+<div class="blog-archives">
+		<!--<div class="search">
+			<h4>サイト内記事検索</h4>
+			<form action="https://muride.github.io/itnsanshin/" method="get">
+ 			<input type="search" name="search" placeholder="キーワードを入力" class="searchinput">
+			<input type="submit" name="submit" value="検索" class="submitbtn">
+			</form>
+		</div>-->
+			
+		<div class="category">
+			<h4>カテゴリ別</h4>
+			<p class="categoryindex" id="all">全て</p>
+			<p class="categoryindex" id="notification">お知らせ</p>
+			<!--
+			<p class="categoryindex" id="sanshin">三線の話</p>
+			<p class="categoryindex" id="diary">日記</p>
+			<p class="categoryindex" id="others">その他</p>-->
+		</div>
+				
+				
+		<div class="monthly">
+			<h4>月別</h4>
+			<!--<p class="monthindex" id="202311">2023年11月</p>-->
+			<p class="monthindex" id="202310">2023年12月</p>
+		</div>				
+	</div>
+
+</body>
