@@ -7,12 +7,3 @@ $(function(){
 		$(".menu-contents").toggleClass("fadedisplay");
 	});
 });
-
-$(function() {
-  $('.carousel-wrapper').slick({
-	  autoplay:true,
-	  centerMode: true,
-	  centerPadding: '12%',
-	  slidesToShow: 1,
-  }); 
-});
