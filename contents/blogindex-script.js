@@ -74,17 +74,5 @@ if (location.search == "?index-notification"){
 		$(".others").removeClass("hidden");
 		$(".pagenation").addClass("hidden");
 	});
-	
-	$("#202312").click(function(){
-		$(".blog-index").addClass("hidden");
-		$(".202312").removeClass("hidden");
-		$(".pagenation").addClass("hidden");
-	});
-	
-	$("#202401").click(function(){
-		$(".blog-index").addClass("hidden");
-		$(".202401").removeClass("hidden");
-		$(".pagenation").addClass("hidden");
-	});
 
 });
