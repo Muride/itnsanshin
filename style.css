@@ -400,6 +400,26 @@ h4{
 	line-height:28px;
 }
 
+.blog-text h1{
+	font-size:20px;
+	background-color:#432209;
+	color:#FCF8F5;
+	padding:5px 10px;
+}
+
+.blog-text img{
+	width:100%;
+}
+
+.blog-text video{
+	width:100%;
+}
+
+.smalltxt{
+	font-size:12px;
+	color:rgba(67,34,9,0.4);
+}
+
 .textlink{
 	text-decoration:underline;
 	color:#2C44D3;
