@@ -19,12 +19,4 @@ $(function(){
 	$("#others").click(function(){
 		location.href = "../04-blog-top.html?index-others";
 	});
-	
-	$("#202312").click(function(){
-		location.href = "../04-blog-top.html?index-202312";
-	});
-	
-	$("#202401").click(function(){
-		location.href = "../04-blog-top.html?index-202401";
-	});
 });
